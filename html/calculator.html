@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/calculator.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- <h1>Calculator</h1> -->
+      <input type="text" id="display" readonly />
+      <div class="buttons-container">
+        <button class="button-top" onclick="clearScreen()">AC</button>
+        <button class="button-top" onclick="buttonOutput('-')">+/-</button>
+        <button class="button-top" onclick="buttonOutput('%')">%</button>
+        <button class="button-right" onclick="buttonOutput('/')">÷</button>
+        <button class="button" onclick="buttonOutput('7')">7</button>
+        <button class="button" onclick="buttonOutput('8')">8</button>
+        <button class="button" onclick="buttonOutput('9')">9</button>
+        <button class="button-right" onclick="buttonOutput('*')">×</button>
+        <button class="button" onclick="buttonOutput('4')">4</button>
+        <button class="button" onclick="buttonOutput('5')">5</button>
+        <button class="button" onclick="buttonOutput('6')">6</button>
+        <button class="button-right" onclick="buttonOutput('-')">-</button>
+        <button class="button" onclick="buttonOutput('1')">1</button>
+        <button class="button" onclick="buttonOutput('2')">2</button>
+        <button class="button" onclick="buttonOutput('3')">3</button>
+        <button class="button-right" onclick="buttonOutput('+')">+</button>
+        <button class="button" onclick="deleteLastCharacter()">⌫</button>
+        <button class="button" onclick="buttonOutput('0')">0</button>
+        <button class="button" onclick="buttonOutput('.')">.</button>
+        <button class="button-right" onclick="finalResult()">=</button>
+      </div>
+    </div>
+    <script src="/javascript/calculator.js"></script>
+  </body>
+</html>
